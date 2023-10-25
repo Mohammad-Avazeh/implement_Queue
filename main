@@ -1,0 +1,152 @@
+package saf;
+
+public class main {
+    public static void main(String[] args){
+/*
+        Saf ik=new Saf();
+
+        for(int i=0;i<26;i++){
+            ik.add_element(19);
+        }
+
+        ik.namayesh();
+*/
+
+        Saf kj=new Saf(5);
+        System.out.println("\n++++");
+
+        kj.add_element(18);
+        kj.add_element(187);
+        kj.add_element(985);
+        kj.add_element(2541);
+
+        kj.namayesh();
+
+        System.out.println("\n output is : "+kj.remove_element());
+
+        kj.namayesh();
+
+        kj.add_element(965);
+        System.out.println("\n---");
+        kj.namayesh();
+
+        kj.add_element(178);
+        System.out.println("\n---");
+        kj.namayesh();
+
+        kj.add_element(854);
+        System.out.println("\n---");
+        kj.namayesh();
+
+        System.out.println("\n output is : "+kj.remove_element());
+        kj.namayesh();
+        System.out.println("\n----");
+
+        System.out.println("outpt is : " + kj.remove_element());
+        kj.namayesh();
+        System.out.println("\n----");
+
+        kj.add_element(19);
+        kj.namayesh();
+        System.out.println("\n----");
+
+        System.out.println("output is : "+kj.remove_element());
+        kj.namayesh();
+        System.out.println("\n----");
+
+        /*
+        kj.add_element(18);
+        kj.add_element(19);
+        kj.add_element(200);
+        kj.add_element(462);
+
+        kj.namayesh();
+*/
+
+//        System.out.println(ik.remove_element());
+/*
+        ik.add_element(36);
+        ik.add_element(75);
+        ik.add_element(49);
+        ik.add_element(325);
+        ik.add_element(59);
+        ik.add_element(1895);
+        ik.add_element(1842369);
+/*
+        ik.vaz();
+
+        System.out.println("1-the element output is : "+ik.remove_element());
+        System.out.println("2-the element output is : "+ik.remove_element());
+        System.out.println("3-the element output is : "+ik.remove_element());
+        System.out.println("4-the element output is : "+ik.remove_element());
+
+        //ik.add_element(2987);
+*/
+/*
+        System.out.println("\n\n*******");
+        ik.namayesh();
+        System.out.println("\n******\n\n");
+
+        System.out.println("element output is : "+ik.remove_element());
+        System.out.println("\n\n*******");
+        ik.namayesh();
+        System.out.println("\n******\n\n");
+
+        System.out.println("element output is : "+ik.remove_element());
+        System.out.println("\n\n*******");
+        ik.namayesh();
+        System.out.println("\n******\n\n");
+
+        ik.add_element(18);
+        System.out.println("\n\n*******");
+        ik.namayesh();
+        System.out.println("\n******\n\n");
+//----------------------
+        System.out.println("element output is : "+ik.remove_element());
+        System.out.println("\n\n*******");
+        ik.namayesh();
+        System.out.println("\n******\n\n");
+        System.out.println("element output is : "+ik.remove_element());
+        System.out.println("\n\n*******");
+        ik.namayesh();
+        System.out.println("\n******\n\n");
+        System.out.println("element output is : "+ik.remove_element());
+        System.out.println("\n\n*******");
+        ik.namayesh();
+        System.out.println("\n******\n\n");
+        System.out.println("element output is : "+ik.remove_element());
+        System.out.println("\n\n*******");
+        ik.namayesh();
+        System.out.println("\n******\n\n");
+        System.out.println("element output is : "+ik.remove_element());
+        System.out.println("\n\n*******");
+        ik.namayesh();
+        System.out.println("\n******\n\n");
+
+        System.out.println("-------");
+        ik.add_element(945);
+        System.out.println("\n\n*******");
+        ik.namayesh();
+        System.out.println("\n******\n\n");
+
+        System.out.println("element output is : "+ik.remove_element());
+        System.out.println("\n\n*******");
+        ik.namayesh();
+        System.out.println("\n******\n\n");
+        System.out.println("element output is : "+ik.remove_element());
+        System.out.println("\n\n*******");
+        ik.namayesh();
+        System.out.println("\n******\n\n");
+
+        ik.add_element(258741);
+        System.out.println("\n\n*******");
+        ik.namayesh();
+        System.out.println("\n******\n\n");
+
+/*
+        System.out.println("element output is : "+ik.remove_element());
+        System.out.println("element output is : "+ik.remove_element());
+
+ */
+    }
+}
