@@ -1,0 +1,99 @@
+package saf;
+
+public class Saf {
+    private int shoro = 0, zarfiat, payan;
+    private int[] arraySaf = new int[30];
+
+    //------------------------------------------------------
+    public Saf() {
+        zarfiat = 20;
+        payan = zarfiat - 1;
+    }
+
+    public Saf(int maxNumber) {
+        zarfiat = maxNumber;
+        payan=zarfiat-1;
+    }
+//---------------------------------------------------------
+
+    /**
+     * باید ورودی داده تغییر کند . مثل صف نانوایی که هر کسی برود مستقیما در جایگاه نون گرفتن قرار می گیرد
+     *
+     * @param elementInput
+     */
+//---------------------------------------------------------
+    public void add_element(int elementInput) {
+        if (payan>=0) {
+            arraySaf[payan--] = elementInput;
+        }else{
+            System.out.println("\nArray is FULL !");
+        }
+
+        //System.out.println("*****\nshomarande is : " + payan +"\n*****\n");
+    }
+
+    public void namayesh() {
+        for (int i = 0; i < zarfiat; i++) {
+            System.out.print(arraySaf[i] + "\t");
+        }
+    }
+
+    //-----------------------------------------
+    public void vaz() {
+        System.out.println("shoro is " + shoro + "  payan is : " + payan);
+    }
+//-----------------------------------------
+
+    /**
+     * در قسمت خروجی داده ها شاید نیاز باشد از آرایه ای دیگر استفاده کنیم . شاید هم بتوان متغیری را ساخت که بتواند با متغیر اولی تداخل نداشته باشد اما برای نمایش خروجی باشد
+     *
+     * @return
+     */
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    public int adad() {
+        int finish = payan + (zarfiat - payan - 1);
+        return finish;
+    }
+
+    //+++++++++++++++++++++++++++++++++++++++++++++++++++++
+    public int remove_element() {
+        /**
+         * اینجا درک می کند که باید آخرین خانه آرایه را برگرداند. باید بعد از اینکه یک عمل جا به جایی بین عناصر اتفاق بیافتد.
+         */
+        int value = arraySaf[zarfiat - 1];
+        arraySaf[zarfiat-1]=0;
+        shift();
+        payan++;
+        return value;
+    }
+    public void shift(){
+        for(int f=zarfiat-1; f>0;f--) {
+            int swap = arraySaf[f - 1];
+            arraySaf[f - 1] = arraySaf[f];
+            arraySaf[f] = swap;
+
+            if(arraySaf[f]==0){
+                break;
+            }
+
+        }
+    }
+}
+
+
+//***********************************************************
+/*
+        if (shoro<payan) {
+
+             value=arraySaf[--payan];
+            System.out.println("****  :  "+value);
+
+        }else if(shoro==payan){
+
+           System.out.println("\n==========\nsaf Khali!\n=======\n");
+        }
+
+ */
+//*************************************************************
+        //return value;
+
