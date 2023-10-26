@@ -2,7 +2,7 @@ package saf;
 
 public class Saf {
     private int shoro = 0, zarfiat, payan;
-    private int[] arraySaf = new int[30];
+    private int[] arraySaf = new int[30];//شاید بهتر باشه اینجا تعریف بشه در توابع سازنده اندازه یا ظرفیت آن مشخص شود.
 
     //------------------------------------------------------
     public Saf() {
